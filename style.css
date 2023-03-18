@@ -360,10 +360,14 @@ section span {
     padding: 0 20px 20px 50px;
     font-size: 36px;
     border-radius: 20px;
-    opacity: 0.9;
   }
 
-  .menu__items ul {
+  .menu__trigger:checked~.menu__items {
+    opacity: 0.9;
+    transition: opacity 500ms;
+  }
+
+  P .menu__items ul {
     border: none;
     padding-top: 227px;
   }
@@ -376,7 +380,7 @@ section span {
   .mosaic {
     grid-area: mosaic;
     height: auto;
-    background-image: url("./assets/cao-no-bg.png"), url("./assets/bg-2.svg");
+    background-image: url("./assets/dog-no-bg.png"), url("./assets/bg-2.svg");
     background-repeat: no-repeat, no-repeat;
     background-position: top 98px left 90px, top 20px left;
     background-size: 400px, auto;
