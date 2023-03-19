@@ -135,6 +135,7 @@ header {
 .info .pet-images img {
   outline: 3px solid var(--primary-2);
   border-radius: 50%;
+  width: 24px;
 }
 
 .info .pet-images img+img {
@@ -308,7 +309,7 @@ section span {
     align-self: center;
   }
 
-  .info img {
+  .info .pet-images img {
     width: 32px;
   }
 
