@@ -44,6 +44,7 @@ header {
   height: 72px;
   z-index: 100;
   opacity: 0;
+  cursor: pointer;
 }
 
 .menu {
@@ -80,6 +81,7 @@ header {
 }
 
 .menu__trigger:checked~.menu__items {
+  /* display: block; */
   opacity: 1;
   transition: opacity 500ms;
 }
@@ -175,6 +177,7 @@ header {
   background-position: bottom center, bottom center;
 }
 
+
 .cta {
   position: absolute;
   left: 50%;
@@ -195,80 +198,6 @@ header {
   font-weight: 700;
   font-size: 14px;
 }
-
-
-/* section */
-
-main {
-  color: var(--blue);
-  padding-top: 70px;
-  padding-bottom: 40px;
-}
-
-main h3 {
-  font-size: 30px;
-  font-weight: 700;
-  width: 320px;
-  margin: 0 auto 24px;
-}
-
-.container-sections {
-  display: grid;
-  gap: 10px;
-}
-
-section {
-  background-color: var(--rose-2);
-  border: 1px solid var(--rose-1);
-  color: var(--blue);
-  height: 200px;
-  width: 320px;
-  border-radius: 20px;
-  padding: 30px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-section img {
-  width: 30px;
-}
-
-section p {
-  font-size: 14px;
-  color: black;
-  line-height: 110%;
-}
-
-section span {
-  font-weight: 700;
-}
-
-/* */
-.app-screen {
-  margin-top: 35px;
-  position: relative;
-  background-image: url("./assets/app-screen-bg.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 360px;
-  width: 100%;
-}
-
-.app-screen::before {
-  position: absolute;
-  width: 100%;
-  height: 280px;
-  content: '';
-  background-color: hsla(356, 81%, 96%, 0.8);
-  border-top: 1px solid var(--rose-1);
-  border-bottom: 1px solid var(--rose-1);
-  z-index: -1;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 
 @media (min-width: 1100px) {
   .hero-wrapper {
@@ -397,74 +326,6 @@ section span {
     height: 72px;
     border-radius: 20px;
     font-size: 20px;
-  }
-
-  main {
-    padding: 100px;
-    display: grid;
-    grid-template-areas: "title title"
-      "section screen";
-    gap: 32px;
-    grid-template-columns: 1fr 1fr;
-    max-width: 1440px;
-    margin: auto;
-  }
-
-  main h3 {
-    width: 100%;
-    font-size: 48px;
-    grid-area: title;
-  }
-
-  .container-sections {
-    grid-area: section;
-    display: grid;
-    grid-template-areas: "A B"
-      "C C";
-    gap: 32px;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .container-sections section:nth-child(1) {
-    grid-area: A;
-  }
-
-  .container-sections section:nth-child(2) {
-    grid-area: B;
-  }
-
-  .container-sections section:nth-child(3) {
-    grid-area: C;
-  }
-
-  section {
-    width: 100%;
-    padding-right: 20px;
-  }
-
-  .app-screen {
-    grid-area: screen;
-    margin: 0;
-    height: 472px;
-    margin-top: -44px;
-    background-image: url('./assets/app-screen-bg.svg'), url('./assets/app-screen-bg.svg');
-    background-position: top left -50px, bottom -100px right -100px;
-  }
-
-  .app-screen::before {
-    display: none;
-  }
-
-  .app-screen::after {
-    position: absolute;
-    width: 100%;
-    height: 426px;
-    content: '';
-    background-color: hsla(356, 81%, 96%, 0.6);
-    border: 1px solid var(--rose-1);
-    z-index: -1;
-    bottom: 0;
-    border-radius: 20px;
   }
 
 }
