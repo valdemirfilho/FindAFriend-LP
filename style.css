@@ -428,6 +428,7 @@ section span {
     height: 72px;
     border-radius: 20px;
     font-size: var(--fs-20);
+    transition: all 500ms;
   }
 
   .cta__button:hover {
