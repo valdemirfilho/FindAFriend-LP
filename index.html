@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon">
+  <script src="main.js" defer></script>
 </head>
 
 <body id="home">
@@ -34,7 +35,7 @@
                 <a href="#about">Sobre o app</a>
               </li>
               <li>
-                <a href="#">Animais disponíveis</a>
+                <a href="#friends">Animais disponíveis</a>
               </li>
               <li>
                 <a href="#">Sobre o FindAFriend</a>
@@ -116,6 +117,72 @@
       <div class="app-screen">
       </div>
     </main>
+
+    <div id="friends">
+      <div class="friends__content">
+        <h2 class="friends__title">Há muitos<br />amigos esperando<br />por você!</h2>
+        <p class="friends__text">
+          O FiendAFriend conecta pessoas que estão procurando por um animal de estimação com animais que precisam de um lar amoroso. É fácil de usar e você pode navegar por uma variedade de animais para
+          encontrar aquele que melhor se adapta ao seu estilo de vida e necessidades.
+        </p>
+
+        <a href="#" class="cta__button">Acesse agora</a>
+
+        <div class="carousel">
+          <span class="carousel__prev">Go to previous slide</span>
+          <ol class="carousel__viewport">
+            <li id="carousel__slide1" class="carousel__slide">
+              <div class="carousel__snapper">
+                <!-- <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a> -->
+                <figure>
+                  <img src="./assets/img/hamilton.jpg" alt="Hamilton">
+                  <figcaption>Hamilton</figcaption>
+                </figure>
+                <!-- <a href="#carousel__slide2" class="carousel__next">Go to next slide</a> -->
+              </div>
+            </li>
+
+            <li id="carousel__slide2" class="carousel__slide" tabindex="2">
+              <div class="carousel__snapper">
+                <!-- <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a> -->
+                <figure>
+                  <img src="./assets/img/cleiton.jpg" alt="Cleiton">
+                  <figcaption>Cleiton</figcaption>
+                </figure>
+                <!-- <a href="#carousel__slide3" class="carousel__next">Go to next slide</a> -->
+              </div>
+            </li>
+
+            <li id="carousel__slide3" class="carousel__slide">
+              <div class="carousel__snapper">
+                <!-- <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a> -->
+                <figure>
+                  <img src="./assets/img/aldo.jpg" alt="Aldo">
+                  <figcaption>Aldo</figcaption>
+                </figure>
+                <!-- <a href="#carousel__slide4" class="carousel__next">Go to next slide</a> -->
+              </div>
+            </li>
+          </ol>
+          <span class="carousel__next">Go to next slide</span>
+
+          <div class="carousel__navigation">
+            <ol class="carousel__navigation-list">
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
 </html>
